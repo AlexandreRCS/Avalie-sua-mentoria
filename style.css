@@ -20,7 +20,7 @@ body::before{
     display: block;
     position: absolute;
     width: 100%;
-    height: 465px;
+    height: 447px;
 
     z-index: -1;
     top: 0;
@@ -42,4 +42,84 @@ body::before{
 #header h1{
     font-family: 'Staatliches', cursive;
     font-size: 36px;
+}
+
+#header p{
+    font-size: 16px;
+}
+
+#header img{
+    margin: 2px 0px 0px;
+}
+
+form{
+    border: none;
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+form::before{
+    content: "";
+
+    height: 133px;
+    display: block;
+
+    background-color: #F67669;
+    border-radius: 20px 20px 0 0;
+}
+
+fieldset{
+    position: absolute;
+    top: 0;
+    border: none;
+}
+
+fieldset legend{
+    padding: 50px 0;
+
+    text-align: center;
+
+    color: #FFF;
+    font-size: 24px;
+    font-family: 'Staatliches', cursive;
+}
+
+label{
+    color: #4E4958;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+}
+
+
+label span{
+    color: #C1BCCC;
+    font-size: 12px;
+    margin-left: 9px;
+}
+
+.fieldset-wrapper input{
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    min-width: 300px;
+    padding: 24px;
+  
+}
+
+.fieldset-wrapper{
+    width: 750px;
+    background-color: #fff;
+    padding: 33px 64px 64px;
+   
+   
+}
+
+.evaluator-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

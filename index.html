@@ -19,23 +19,25 @@
         </header>
     </div>
     <form action="">
-        <fieldset>
-            <legend>Informações pessoais</legend>
-            <div class="evaluator-wrapper">
-                <label for="evaluator-name">Nome</label>
-                <input type="text" id="evaluator-name" required>
-            </div>
-
-            <div class="evaluator-wrapper">
-                <label for="evaluator-surname">Sobrenome</label>
-                <input type="text" id="evaluator-surname" required>
-            </div>
-
-            <div class="evaluator-wrapper">
-                <label for="evaluator-email">Email <span>Digite um email válido</span></label>
-                <input type="email" id="evaluator-email" required>
-            </div>
-        </fieldset>
+        <div class="field">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div class="fieldset-wrapper">
+                    <div class="evaluator-wrapper">
+                        <label for="evaluator-name">Nome</label>
+                        <input type="text" id="evaluator-name" required>
+                    </div>
+                    <div class="evaluator-wrapper">
+                        <label for="evaluator-surname">Sobrenome</label>
+                        <input type="text" id="evaluator-surname" required>
+                    </div>
+                    <div class="evaluator-wrapper">
+                        <label for="evaluator-email">Email <span>(Digite um email válido)</span></label>
+                        <input type="email" id="evaluator-email" required>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
         
     </form>
 </body>
