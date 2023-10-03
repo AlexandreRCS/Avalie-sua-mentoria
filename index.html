@@ -21,19 +21,40 @@
     <form action="">
         <div class="field">
             <fieldset>
-                <legend>Informações pessoais</legend>
-                <div class="fieldset-wrapper">
+                <legend class="top">Informações pessoais</legend>
+                <div class="fieldset-info-pessoais">
                     <div class="evaluator-wrapper">
                         <label for="evaluator-name">Nome</label>
-                        <input type="text" id="evaluator-name" required>
+                        <input type="text" id="evaluator-name" class="input-text" required>
                     </div>
                     <div class="evaluator-wrapper">
                         <label for="evaluator-surname">Sobrenome</label>
-                        <input type="text" id="evaluator-surname" required>
+                        <input type="text" id="evaluator-surname" class="input-text" required>
                     </div>
                     <div class="evaluator-wrapper">
                         <label for="evaluator-email">Email <span>(Digite um email válido)</span></label>
                         <input type="email" id="evaluator-email" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações do mentor</legend>
+                <div class="separador"></div>
+
+                <div class="fieldset-info-mentor">
+                    <div class="evaluator-wrapper">
+                        <label for="evaluator-mentor">Selecione quem foi o seu mentor</label>
+                        <select name="" id="evaluator-mentor">
+                            <option value="Jiraya">Jiraya</option>
+                            <option value="Kakashi">Kakashi</option>
+                            <option value="Satoru Gojo">Satoru Gojo</option>
+                        </select>
+                    </div>
+
+                    <div class="evaluator-wrapper">
+                        <label for="evaluator-feedback">Feedback sobre o mentor</label>
+                        <textarea name="" id="evaluator-feedback"></textarea>
                     </div>
                 </div>
             </fieldset>

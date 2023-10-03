@@ -20,7 +20,7 @@ body::before{
     display: block;
     position: absolute;
     width: 100%;
-    height: 447px;
+    height: 524px;
 
     z-index: -1;
     top: 0;
@@ -52,36 +52,41 @@ body::before{
     margin: 2px 0px 0px;
 }
 
+
 form{
     border: none;
     width: 750px;
     margin: 0 auto;
     position: relative;
-    
+    background-color: #FFF;
+    padding: 0px 64px 64px;
+    z-index: 1;
+    border-radius: 22px 22px 0 0;
 }
 
 form::before{
-    content: "";
-
-    height: 133px;
-    display: block;
+    content: '';
 
     background-color: #F67669;
-    border-radius: 20px 20px 0 0;
-}
+    display: block;
+    height: 133px;
+    width: 750px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 
+    border-radius: 22px 22px 0 0;
+    
+}
 fieldset{
-    position: absolute;
     top: 0;
     border: none;
 }
 
 fieldset legend{
-    padding: 50px 0;
-
     text-align: center;
 
-    color: #FFF;
     font-size: 24px;
     font-family: 'Staatliches', cursive;
 }
@@ -99,21 +104,35 @@ label span{
     color: #C1BCCC;
     font-size: 12px;
     margin-left: 9px;
+
 }
 
-.fieldset-wrapper input{
+input, select, textarea{
+    font-family: 'Poppins' , sans-serif;
 
     border-radius: 8px;
     border: 1px solid #E6E6F0;
-    min-width: 300px;
-    padding: 24px;
-  
+    background-color: #FAFAFC;
 }
 
-.fieldset-wrapper{
+.top{
+   padding-top: 50px;
+}
+
+
+.fieldset-info-pessoais input{
+    height: 56px;
+    padding: 24px;
+}
+    
+
+.fieldset-info-pessoais{
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
     width: 750px;
     background-color: #fff;
-    padding: 33px 64px 64px;
+    margin-top: 122px;
    
    
 }
@@ -122,4 +141,41 @@ label span{
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 300px;
+
+}
+
+.fieldset-info-pessoais,:nth-child(3){
+    width: 100%;
+    margin-bottom: 32px;
+    
+}
+
+.separador{
+    width: 622px;
+    height: 1px;
+
+    background-color: #E6E6F0;
+
+    margin: 8px 0 32px;
+}
+
+.evaluator-wrapper select{
+    appearance: none;
+
+    height: 56px;
+    padding: 14px;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+
+    margin-bottom: 32px;
+
+}
+
+.evaluator-wrapper textarea{
+    width: 608px;
+    height: 166px;
+    padding: 24px;
 }
