@@ -18,7 +18,7 @@
             <img src="imagens/img1-2.svg" alt="um balão de fala com 5 estrelas simbolizando uma escala de avaliação, na imagen temos uma avaliação de 3 estrelas">
         </header>
     </div>
-    <form action="">
+    <form id="my-forms">
         <div class="field">
             <fieldset>
                 <legend class="top">Informações pessoais</legend>
@@ -56,10 +56,40 @@
                         <label for="evaluator-feedback">Feedback sobre o mentor</label>
                         <textarea name="" id="evaluator-feedback"></textarea>
                     </div>
+
+                    <div class="evaluator-wrapper-checkbox">
+                        <input type="checkbox" name="" id="evaluator-checkbox">
+                        <label for="evaluator-checkbox">Todas minhas dúvidas foram esclarecias durante a mentoria.</label>
+                    </div>
                 </div>
             </fieldset>
         </div>
-        
+
+        <fieldset>
+            <legend>agendando próxima mentoria</legend>
+            <div class="separador"></div>
+
+            <div class="evaluator-schedule">
+                <div class="evaluator-wrapper">
+                    <label for="evaluator-date">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date"  id="evaluator-date">
+                </div>
+    
+                <div class="evaluator-wrapper">
+                    <label for="evaluator-begin">Das</label>
+                    <input type="time"  id="evaluator-begin">
+                </div>
+    
+                <div class="evaluator-wrapper">
+                    <label for="evaluator-end">Até</label>
+                    <input type="time"  id="evaluator-end">
+                </div>
+            </div>
+
+        </fieldset>
     </form>
+    <footer>
+        <input form="my-forms" type="submit" value="Salva">
+    </footer>
 </body>
 </html>
